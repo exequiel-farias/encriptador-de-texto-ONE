@@ -1,0 +1,133 @@
+*{
+    background: #E5E5E5;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    width: 8%;
+}
+main{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 80px;
+    justify-content: center;
+}
+.entrada-texto{
+    resize: none;
+    margin-top: 90px;
+    color: darkblue;
+    border: none;
+}
+.entrada-texto::placeholder{
+    color: darkblue;
+}
+.entrada-texto:focus{
+    outline:  none;
+}
+.salida-texto{
+    resize: none;
+    margin-left: 98px;
+    padding: 20px;
+    padding-bottom: 120px;
+    height: 612px;
+    color: darkblue;
+    background: white;
+    background-image: url(imagenes/Muneco.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    border-radius: 32px;
+    box-shadow: 0 24px 32px -8px rgba(0, 0, 0, 0.08);
+}
+.salida-texto:focus{
+    outline: none;
+}
+.restriccion{
+    color: grey;
+    font-size: 16px;
+}
+.botones{
+    display: flex;
+    margin-top: 18px;
+}
+.btn-encriptar{
+    color: #D8DFE8;
+    background: darkblue;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+.btn-desencriptar{
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 30px;
+    width: 328px;
+}
+.contenedor-dinamico{
+    background: transparent;
+    margin-left: 120px;
+    margin-top: -240px;
+    width: 360px;
+    position: absolute;
+    text-align: center;
+}
+.texto1{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: initial;
+    background: transparent;
+}
+.texto2{
+    font-size: 16px;
+    line-height: initial;
+    background: transparent;
+}
+.btn-copiar{
+    color: darkblue;
+    background: #D8DFE8;
+    border: 1px solid darkblue;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 67px;
+    width: 336px;
+    margin-top: 120px;
+}
+.btn-encriptar:hover, .btn-desencriptar:hover, .btn-copiar:hover{
+    background: #555;
+    color: white;
+}
+
+/* Laptop */
+@media screen and (max-width: 1366px) {
+    main{
+        margin-left: 0px;
+    }
+    .entrada-texto{
+        margin-top: 50px;
+        width: 686px;
+        height: 400px;
+    }
+    .botones, .salida-texto{
+        margin-top: 0px;
+    }
+    .salida-texto{
+        height: 550px;
+    }
+    .contenedor-dinamico{
+        margin-top: -160px;
+    }
+    .btn-copiar{
+        margin-top: 60px;
+    }
+}
